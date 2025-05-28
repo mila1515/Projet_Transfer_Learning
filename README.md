@@ -82,7 +82,8 @@ pip install -r requirements.txt
 │       └── val/
 │           ├── NORMAL/
 │           └── PNEUMONIA/
-├── pneumonia_classification_template.ipynb
+├── pneumonia_detection_VGG16.ipynb
+├── Pneumonia_Detection_ResNet50V2.ipynb.ipynb
 ├── requirements.txt
 └── README.md
 ```
