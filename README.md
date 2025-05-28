@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🧠 Classification Automatique de la Pneumonie par Deep Learning
 
 ## 🩺 Présentation de la Maladie
@@ -10,15 +11,27 @@ Ce projet vise à développer un système de classification automatique de la pn
 
 ## 🎯 Objectifs
 
+=======
+##  Description du Projet
+Ce projet vise à développer un système de classification automatique de pneumonie à partir de radiographies thoraciques en utilisant des techniques de Deep Learning. Il s'agit d'un Proof of Concept (POC) démontrant la faisabilité d'un système de classification binaire d'images médicales.
+
+##  Objectifs
+>>>>>>> f24415042b7a193b5d84e2db23d246a8b50d1198
 - Réutiliser un modèle CNN pré-entraîné pour la classification de pneumonie
 - Mettre en place un pipeline MLOps avec MLflow
 - Documenter et tracer les expérimentations
 - Créer un prototype fonctionnel pour validation médicale
 
+<<<<<<< HEAD
 
 ##  Technologies Utilisées
 - **Deep Learning** : TensorFlow/Keras
 - **Modèle** : ResNet50V2, VGG16 (transfer learning)
+=======
+##  Technologies Utilisées
+- **Deep Learning** : TensorFlow/Keras
+- **Modèle** : EfficientNetB0 (transfer learning)
+>>>>>>> f24415042b7a193b5d84e2db23d246a8b50d1198
 - **MLOps** : MLflow
 - **Visualisation** : Matplotlib, Seaborn
 - **Traitement des données** : NumPy, Pandas
@@ -44,6 +57,7 @@ source .venv/bin/activate  # Linux/Mac
 ```bash
 pip install -r requirements.txt
 ```
+<<<<<<< HEAD
 ## 📚 Description
 
 - **Modèle utilisé** : VGG16 (pré-entraîné sur ImageNet, fine-tuning léger), ResNet50V2
@@ -51,6 +65,8 @@ pip install -r requirements.txt
 - **Données** : Images issues du dataset [Chest X-ray](https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia)
 - **Entraînement** : Data augmentation, early stopping, suivi avec MLflow . Références (https://mlflow.org/)
 - **Évaluation** : Accuracy, matrice de confusion, courbe ROC/AUC, classification report
+=======
+>>>>>>> f24415042b7a193b5d84e2db23d246a8b50d1198
 
 ##  Structure du Projet
 ```
@@ -71,6 +87,7 @@ pip install -r requirements.txt
 └── README.md
 ```
 
+<<<<<<< HEAD
  ## Utilisation
 
 1. **Préparer les données**  
@@ -101,11 +118,31 @@ pip install -r requirements.txt
 - Ajuster le seuil de décision pour améliorer la spécificité
 - Utiliser la validation croisée pour stabiliser les métriques
 
+=======
+##  Utilisation
+
+1. Préparer les données :
+   - Placer les images de radiographies dans les dossiers appropriés
+   - Structure : NORMAL et PNEUMONIA dans chaque sous-dossier
+
+2. Exécuter le notebook :
+   - Ouvrir `pneumonia_classification_VGG16.ipynb`
+   - Exécuter les cellules dans l'ordre
+
+3. Suivi des expériences :
+   - Les métriques sont automatiquement enregistrées dans MLflow
+   - Accéder à l'interface MLflow pour visualiser les résultats
+
+>>>>>>> f24415042b7a193b5d84e2db23d246a8b50d1198
 ##  Fonctionnalités
 
 ### Modèle
 - Classification binaire (Normal vs Pneumonie)
+<<<<<<< HEAD
 - Transfer learning avec VGG16 , ResNet50V2
+=======
+- Transfer learning avec EfficientNetB0
+>>>>>>> f24415042b7a193b5d84e2db23d246a8b50d1198
 - Augmentation de données pour la robustesse
 - Évaluation complète (matrice de confusion, ROC, etc.)
 
@@ -141,4 +178,7 @@ Les contributions sont les bienvenues ! Pour contribuer :
 3. Commiter vos changements
 4. Pousser vers la branche
 5. Ouvrir une Pull Request
+<<<<<<< HEAD
 
+=======
+>>>>>>> f24415042b7a193b5d84e2db23d246a8b50d1198
