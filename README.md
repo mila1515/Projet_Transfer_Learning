@@ -8,12 +8,6 @@
 
 Ce projet vise à développer un système de classification automatique de la pneumonie à partir de radiographies thoraciques (chest X-ray) en utilisant des techniques de Deep Learning. L’approche s’appuie sur le transfert de connaissances (transfer learning) et une évaluation complète du modèle avec des métriques médicales pertinentes.
 
-## 🎯 Objectifs
-
-
-##  Description du Projet
-Ce projet vise à développer un système de classification automatique de pneumonie à partir de radiographies thoraciques en utilisant des techniques de Deep Learning. Il s'agit d'un Proof of Concept (POC) démontrant la faisabilité d'un système de classification binaire d'images médicales.
-
 ##  Objectifs
 
 - Réutiliser un modèle CNN pré-entraîné pour la classification de pneumonie
@@ -21,16 +15,9 @@ Ce projet vise à développer un système de classification automatique de pneum
 - Documenter et tracer les expérimentations
 - Créer un prototype fonctionnel pour validation médicale
 
-<<<<<<< HEAD
-
 ##  Technologies Utilisées
 - **Deep Learning** : TensorFlow/Keras
 - **Modèle** : ResNet50V2, VGG16 (transfer learning)
-  
-##  Technologies Utilisées
-- **Deep Learning** : TensorFlow/Keras
-- **Modèle** : EfficientNetB0 (transfer learning)
->>>>>>> f24415042b7a193b5d84e2db23d246a8b50d1198
 - **MLOps** : MLflow
 - **Visualisation** : Matplotlib, Seaborn
 - **Traitement des données** : NumPy, Pandas
