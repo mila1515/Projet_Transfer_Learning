@@ -1,7 +1,3 @@
-# Projet_Transfer_Learning
-PROJET : Détection de Pneumonie à partir de Radios ThoraciquesObjectif : Classification binaire avec CNN pré-entraîné + MLflow
-
-
 ##  Description du Projet
 Ce projet vise à développer un système de classification automatique de pneumonie à partir de radiographies thoraciques en utilisant des techniques de Deep Learning. Il s'agit d'un Proof of Concept (POC) démontrant la faisabilité d'un système de classification binaire d'images médicales.
 
