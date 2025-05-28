@@ -6,5 +6,8 @@ mlflow
 jupyter
 pandas
 numpy
+
+
+
 keras
 streamlit
