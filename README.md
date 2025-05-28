@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🧠 Classification Automatique de la Pneumonie par Deep Learning
 
 ## 🩺 Présentation de la Maladie
@@ -179,7 +178,4 @@ Les contributions sont les bienvenues ! Pour contribuer :
 3. Commiter vos changements
 4. Pousser vers la branche
 5. Ouvrir une Pull Request
-<<<<<<< HEAD
 
-=======
->>>>>>> f24415042b7a193b5d84e2db23d246a8b50d1198
