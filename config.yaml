@@ -1,0 +1,39 @@
+general:
+  seed: 42
+
+data:
+  data_dir: data/raw/chest_xray
+  img_size: [224, 224]
+  # The original Kaggle validation folder contains too few images (18 here).
+  # Reserve a reproducible portion of the training folder instead.
+  validation_source: train_split  # options: train_split, folder
+  validation_split: 0.15
+  # Resized float32 images require about 3.3 GiB for this dataset alone.
+  cache_in_memory: false
+
+model:
+  backbone: vgg16  # options: vgg16, resnet50v2, mobilenetv2
+  dropout_rate: 0.3
+  dense_units: 256
+  trainable_layers: 20
+  use_augmentation: true
+
+training:
+  batch_size: 32
+  epochs: 12
+  learning_rate: 0.0001
+  patience: 4
+  use_class_weights: true
+  model_dir: models
+  model_output_name: pneumonia_model.keras
+
+evaluation:
+  threshold: 0.5
+  report_dir: reports
+
+mlflow:
+  # MLflow 3 no longer accepts the filesystem store by default.
+  tracking_uri: sqlite:///mlflow.db
+  experiment_name: pneumonia-transfer-learning
+  register_model: false
+  registered_model_name: PneumoniaClassifier

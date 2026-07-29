@@ -21,6 +21,7 @@ ENV/
 .ipynb_checkpoints
 
 #  Dossiers de données et de sortie
+.history/
 data/
 datasets/
 logs/
@@ -31,10 +32,13 @@ logs/
 #  MLflow artifacts et tracking
 mlruns/
 mlartifacts/
+mlflow.db
 confusion_matrix.png
 
 #  Fichiers modèles
 model/
+models/*
+!models/.gitkeep
 model_finetuned/
 saved_model/
 *.pb
@@ -50,6 +54,12 @@ events.out.tfevents.*
 .cache/
 dist/
 build/
+
+# Rapports et figures générés
+reports/*
+!reports/.gitkeep
+!reports/figures/
+!reports/figures/.gitkeep
 
 
 
